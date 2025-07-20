@@ -1,0 +1,54 @@
+{
+  "recommendations": [
+    // Swift and iOS Development
+    "sswg.swift-lang",
+    "vknabel.vscode-apple-swift-format",
+    "vadimcn.vscode-lldb",
+    "ms-vscode.vscode-json",
+    
+    // Git and Version Control
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    
+    // Code Quality and Formatting
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    
+    // iOS Simulator and Device Management
+    "ms-vscode.vscode-ios-debug",
+    
+    // Project Management
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+    
+    // File Icons and Navigation
+    "pkief.material-icon-theme",
+    "ms-vscode.vscode-explorer-exclude",
+    
+    // Productivity
+    "ms-vscode.vscode-github-copilot",
+    "ms-vscode.vscode-github-copilot-chat",
+    
+    // iOS Asset Management
+    "ms-vscode.vscode-ios-assets",
+    
+    // Swift Package Manager
+    "vknabel.vscode-swift-development-environment",
+    
+    // Code Snippets
+    "ms-vscode.vscode-snippets",
+    
+    // Auto Rename Tag (useful for SwiftUI)
+    "formulahendry.auto-rename-tag",
+    
+    // Bracket Pair Colorizer
+    "coenraads.bracket-pair-colorizer-2",
+    
+    // Path Intellisense
+    "christian-kohler.path-intellisense",
+    
+    // Auto Close Tag
+    "formulahendry.auto-close-tag"
+  ]
+} 

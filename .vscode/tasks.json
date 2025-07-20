@@ -1,0 +1,163 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build iOS Project",
+      "type": "shell",
+      "command": "xcodebuild",
+      "args": [
+        "-project",
+        "${workspaceFolder}/ios/*.xcodeproj",
+        "-scheme",
+        "${workspaceFolderBasename}",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=iOS Simulator,name=iPhone 15"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean iOS Build",
+      "type": "shell",
+      "command": "xcodebuild",
+      "args": [
+        "clean",
+        "-project",
+        "${workspaceFolder}/ios/*.xcodeproj"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Run iOS Simulator",
+      "type": "shell",
+      "command": "open",
+      "args": [
+        "-a",
+        "Simulator"
+      ],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Install iOS Dependencies",
+      "type": "shell",
+      "command": "cd",
+      "args": [
+        "${workspaceFolder}/ios",
+        "&&",
+        "pod",
+        "install"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Update iOS Dependencies",
+      "type": "shell",
+      "command": "cd",
+      "args": [
+        "${workspaceFolder}/ios",
+        "&&",
+        "pod",
+        "update"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Swift Package Manager: Resolve",
+      "type": "shell",
+      "command": "swift",
+      "args": [
+        "package",
+        "resolve"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Swift Package Manager: Update",
+      "type": "shell",
+      "command": "swift",
+      "args": [
+        "package",
+        "update"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Format Swift Code",
+      "type": "shell",
+      "command": "swift-format",
+      "args": [
+        "format",
+        "-r",
+        "${workspaceFolder}/ios"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Lint Swift Code",
+      "type": "shell",
+      "command": "swift-format",
+      "args": [
+        "lint",
+        "-r",
+        "${workspaceFolder}/ios"
+      ],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ]
+} 
