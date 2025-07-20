@@ -14,12 +14,12 @@ Your React app is a **fleet management/security access control system** with the
 
 ### Step 1: Create Xcode Project Foundation
 ```
-OrbitAgSecurity/
-├── OrbitAgSecurity.xcodeproj
-├── OrbitAgSecurity/
+xcode-OrbitAg-MAC/
+├── xcode-OrbitAg-MAC.xcodeproj
+├── xcode-OrbitAg-MAC/
 │   ├── App/
-│   │   ├── OrbitAgSecurityApp.swift (Main app entry point)
-│   │   ├── ContentView.swift (Root view)
+│   │   ├── xcode_OrbitAg_MACApp.swift (Main app entry point - auto-generated)
+│   │   ├── ContentView.swift (Root view - already exists)
 │   │   └── AppDelegate.swift (if needed)
 │   ├── Authentication/
 │   │   ├── Views/
@@ -43,15 +43,15 @@ OrbitAgSecurity/
 │   │   └── Utilities/
 │   │       └── NetworkManager.swift
 │   └── Resources/
-│       ├── Assets.xcassets
+│       ├── Assets.xcassets (already exists)
 │       └── Info.plist
 ```
 
 ### Step 2: Authentication Implementation Files
 
 **1. Main App Entry Point:**
-- `OrbitAgSecurityApp.swift` - App lifecycle and environment setup
-- `ContentView.swift` - Root view with authentication state management
+- `xcode_OrbitAg_MACApp.swift` - App lifecycle and environment setup (auto-generated)
+- `ContentView.swift` - Root view with authentication state management (already exists)
 
 **2. Authentication Views:**
 - `LoginView.swift` - Email/password login form
@@ -155,8 +155,8 @@ OrbitAgSecurity/
 ## Implementation Steps (User Journey Focus)
 
 ### Step 1: Authentication Flow
-1. **Create `OrbitAgSecurityApp.swift`** - App entry point
-2. **Create `ContentView.swift`** - Root view with auth state
+1. **Use existing `xcode_OrbitAg_MACApp.swift`** - App entry point (already created)
+2. **Modify existing `ContentView.swift`** - Root view with auth state
 3. **Create `AuthViewModel.swift`** - Authentication logic
 4. **Create `LoginView.swift`** - Login form UI
 5. **Create `SignUpView.swift`** - Registration form UI
@@ -194,8 +194,8 @@ OrbitAgSecurity/
 ## Detailed File Breakdown
 
 ### Authentication Files (Priority 1)
-- `OrbitAgSecurityApp.swift` - Main app entry point with SwiftUI App protocol
-- `ContentView.swift` - Root view that handles authentication state
+- `xcode_OrbitAg_MACApp.swift` - Main app entry point with SwiftUI App protocol (auto-generated)
+- `ContentView.swift` - Root view that handles authentication state (already exists)
 - `AuthViewModel.swift` - ObservableObject for authentication logic
 - `LoginView.swift` - Email/password login form with validation
 - `SignUpView.swift` - Registration form with email, phone, password fields
